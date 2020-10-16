@@ -3,7 +3,8 @@ p{
 }
 
 #formas_pagamento{
-color: red;
+color: white;
+padding-top: 5px;
 }
 
 .menu{
@@ -27,11 +28,22 @@ color: red;
 #rodape{
     text-align: center;
     bottom: 100%;
+    background-color: red;
+    padding: -0.1px;
+    font-weight: bold;
+    font-size: 20px;
+    
+
  
 }
 
 #rodapeprodutos{
     text-align: center;
+    background-color: red;
+    padding: -0.1px;
+    font-weight: bold;
+    font-size: 20px
+
 
 }
 .tamanho{
@@ -57,8 +69,13 @@ header{
 .logo img{
     width: 80px;
     padding-top: 5px;
+    padding-left: 5px;
 }
 
+#contrucao{
+    padding-top: 50px;
+    padding-left: 400px;
+}
 #menu a{
     padding: 150px;
     text-decoration: none;
@@ -87,6 +104,7 @@ header{
     margin: 5px;
     border-radius: 10px;
     list-style: none;
+    font-weight: bold;
 }
 
 #menu-lateral li:hover{
@@ -96,15 +114,14 @@ header{
 
 
 .produto{
-    width: 240px;
+    width: 220px;
     border: 2px solid red;
     text-align: center;
     margin: 40px;
-    padding-top: 15px;
-    border-radius: 10px;
-
-
-
+    padding-top: 14px;
+    border-radius: 9px;
+    
+    
 }
 
 .produto .valorProduto{
@@ -112,13 +129,21 @@ header{
 }
 .produto .promocao{
     color: red;
+    font-weight: bold;
+    
 }
 #Produtos{
     display:flex;
     flex-wrap: wrap;
 }
 
+.comprar{
+    background-color: red;
+    color: white;
+    border-radius: 9px;
+    
 
+}
 #contatoPrincipal{
 display: flex;
 justify-content:space-around;
@@ -128,6 +153,7 @@ justify-content:space-around;
 #divFormulario{
 margin: 40px;
 font-size: 20px;
+font-weight: bold;
 
 }
 
@@ -135,6 +161,7 @@ font-size: 20px;
 margin: 40px;
 padding-right: 45px;
 font-size: 20px;
+font-weight: bold;
 }
 
 form, input{
