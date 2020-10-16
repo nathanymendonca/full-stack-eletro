@@ -27,6 +27,3 @@ let destaque = (imagem) => {
      else  
        imagem.width = 140;  
 };
-
-   
-
