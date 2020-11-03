@@ -1,7 +1,9 @@
 ﻿<?php
     require_once('conexao.php');
-
-    if (isset($_POST['nome'])){
+    if (isset($_POST['nome']) && isset($_POST['endereco']) && isset($_POST['produto']) && isset($_POST['valorunitario']) 
+    && isset($_POST['quantidade']) && isset($_POST['valortotal']))
+    {
+       
         $nome = $_POST['nome'];
         $endereco = $_POST['endereco'];
         $telefone = $_POST['telefone'];
@@ -9,7 +11,8 @@
         $valorunitario = $_POST['valorunitario'];
         $quantidade = $_POST['quantidade'];
         $valortotal = $_POST['valortotal'];
-        $sql = "INSERT INTO pedido (nome, endereco, telefone, produto, valorunitario, quantidade, valortotal) 
+
+        $sql = "INSERT INTO pedido (nomecliente, endereco, telefone, produto, valorunitario, quantidade, valortotal) 
                 values ('$nome', '$endereco', '$telefone', '$produto', '$valorunitario', '$quantidade', '$valortotal')";
         $result = $conect->query($sql);
     }
@@ -53,9 +56,11 @@
         <h4>Valor total</h4>
         <input name="valortotal" type="number" required style="width:200px">
         <br>
-        <input type="submit" value="Enviar" style="width:150px">
-        </form>
+        <input type="submit" value="Enviar" style="width:150px">   
+
+    </form>
     </main>
+
 
     <footer id="rodape">
             <p id="formas_pagamento">
