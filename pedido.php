@@ -15,7 +15,11 @@
         $sql = "INSERT INTO pedido (nomecliente, endereco, telefone, produto, valorunitario, quantidade, valortotal) 
                 values ('$nome', '$endereco', '$telefone', '$produto', '$valorunitario', '$quantidade', '$valortotal')";
         $result = $conect->query($sql);
+
+        echo "<script> alert('Pedido cadastrado em nossa base de dados')
+             location.href ='pedido.php'</script>";
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +28,7 @@
 
       <title> Full Stack Eletro </title>
       <link rel="stylesheet" href="./CSS/estilo.css">
+      <script src="js/funcoes.js"></script>
 
 
     
