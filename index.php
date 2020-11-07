@@ -3,7 +3,11 @@
 <head> <meta charset="UTF-8">
 
       <title> Full Stack Eletro </title>
-      <link rel="stylesheet" href="./CSS/estilo.css">
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/estilo.css">
 
 
     
@@ -26,7 +30,7 @@
   
 
   
-  
+<!--  
 <main class="logincliente">
 <form  class="login" style="width:500px"> 
 <h2>Login</h2>
@@ -40,6 +44,7 @@
     <input type="submit" value="Cadastrar" style="width:80px">
 </form>
 </main>
+-->
 
 
 <br><br><br><br><br>

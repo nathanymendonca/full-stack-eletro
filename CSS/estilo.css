@@ -1,88 +1,80 @@
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#formas_pagamento{
-color: white;
-padding-top: 5px;
+#formas_pagamento {
+    color: white;
+    padding-top: 5px;
 }
 
-.menu{
+.menu {
     background-color: red;
 }
 
-.menu a{
+.menu a {
     color: white;
 }
 
-.preco{
+.preco {
     color: red;
 }
 
-.produtos{
+.produtos {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-#rodape{
+#rodape {
     text-align: center;
     bottom: 100%;
     background-color: red;
     padding: -0.1px;
     font-weight: bold;
     font-size: 20px;
-    
-
- 
 }
 
-#rodapeprodutos{
+#rodapeprodutos {
     text-align: center;
     background-color: red;
     padding: -0.1px;
     font-weight: bold;
     font-size: 20px
-
-
 }
 
-header{
-    display: flex;
-    background-color: red;
+header {
+    /*display: flex;
     
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;*/
+    width: 100%;
 }
 
-.logo img{
+.navbar-light {
+    background-color: red;
+}
+
+.logo img {
     width: 80px;
     padding-top: 5px;
     padding-left: -2px;
 }
 
-
-#menu a{
-    padding: 110px;
-    text-decoration: none;
-    color:white;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
 
-#menu a:hover{
+#menu a:hover {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    
 }
 
-#principal{
+#principal {
     display: flex;
-
     max-width: 1300px;
     margin: auto;
-
 }
-#menu-lateral li{
+
+#menu-lateral li {
     width: 160px;
     font-size: 20px;
     border: 2px solid red;
@@ -93,97 +85,74 @@ header{
     font-weight: bold;
 }
 
-#menu-lateral li:hover{
+#menu-lateral li:hover {
     background-color: red;
     color: white;
 }
 
-
-.produto{
+.produto {
     width: 220px;
     border: 2px solid red;
     text-align: center;
     margin: 40px;
     padding-top: 14px;
     border-radius: 9px;
-    
-    
 }
 
-.produto .valorProduto{
+.produto .valorProduto {
     text-decoration: line-through;
 }
-.produto .promocao{
+
+.produto .promocao {
     color: red;
     font-weight: bold;
-    
 }
-#Produtos{
-    display:flex;
+
+#Produtos {
+    display: flex;
     flex-wrap: wrap;
 }
 
-#botao{
+#botao {
     padding-bottom: 2px;
 }
-.comprar{
+
+.comprar {
     background-color: red;
     color: white;
     border-radius: 9px;
-    
-    
-
-}
-#Fale_conosco{
-    
-display: flex;
-justify-content:space-around;
-
-
 }
 
-#divFormulario{
-    
-margin: 40px;
-font-size: 20px;
-font-weight: bold;
-
-
+#Fale_conosco {
+    display: flex;
+    justify-content: space-around;
 }
 
-#divContatos{
-    
-margin: 40px;
-padding-right: 45px;
-font-size: 20px;
-font-weight: bold;
-text-align: justify;
-padding-left: 350px;
+#divFormulario {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.comentario{
+#divContatos {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.comentario {
     padding-left: 5px;
-    margin-left: 350px;
 }
-form, input{
-    border: 2px solid red;
-   width: 90%;
-   padding-top: 10px;
-   margin:20px;
-   border-radius: 5px;
-   padding-left: 5px;
-   
-   }
 
-   
+.container--normal {
+    height: 400px;
+}
 
-   .logincliente{
-    
+.btn {
+    margin-top: 30px;
+}
+
+.logincliente {
     padding-left: 350px;
-    }
-
-  
-   .pedido{
-       padding-left: 350px;
-       border: 2px solid red;
-   }
+}

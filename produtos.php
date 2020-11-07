@@ -8,7 +8,7 @@ $database = "fseletro";
 $conn = mysqli_connect($servername, $usarname, $password, $database);
 
 //inserção do código para leitura dos caractéres especiais do banco de dados
-$conn ->query("set names utf8");
+$conn->query("set names utf8");
 
 //verificando a conexão
 if (!$conn) {
@@ -22,6 +22,8 @@ if (!$conn) {
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Produtos - Full Stack Eletro</title>
     <link rel="stylesheet" href="./CSS/estilo.css">
     <script src="js/funcoes.js"></script>
@@ -31,11 +33,11 @@ if (!$conn) {
     <body>
 
         <header>
-        <!--Início Menu  -->
-        <?php
-      include_once("menu.php");
-      ?>
-      <!--Fim Menu  -->
+            <!--Início Menu  -->
+            <?php
+            include_once("menu.php");
+            ?>
+            <!--Fim Menu  -->
         </header>
         <main id="copor">
             <!--Início categoria  -->
@@ -55,41 +57,39 @@ if (!$conn) {
                 </nav>
 
                 <!--fim categoria  -->
-                
+
                 <!--Início Produto  -->
                 <section id="Produtos">
 
-                <?php
-                $sql = "select * from produto";
-                $result = $conn->query($sql);
-                
-                if($result->num_rows >0){
-                    while($rows = $result->fetch_assoc()){
-                       
-                        
-                ?>
-                
-                <div class="produto" id="<?php echo $rows["categoria"];?>" style="display:block;">
-                        <img src="<?php echo $rows["imagem"];?>" width="140px" onclick="destaque(this)">
-                        <p class="descricao"><?php echo $rows["descricao"]; ?></p>
-                        <hr>
-                        <p class="valorProduto">R$<?php echo $rows["preco"];?></p>
-                        <p class="promocao">R$<?php echo $rows["precofinal"];?></p>
-                        <button class="comprar" name="botao" title="clique aqui para comprar">Comprar</button>
-                    </div>
+                    <?php
+                    $sql = "select * from produto";
+                    $result = $conn->query($sql);
 
-                <?php
-                }
-                } else {
-                    echo "Nenhum produto cadastrado!";
-                }
-                
-                ?>
-                <!--Fim Produto  -->
-                  </section>
+                    if ($result->num_rows > 0) {
+                        while ($rows = $result->fetch_assoc()) {
+                    ?>
+
+                            <div class="produto" id="<?php echo $rows["categoria"]; ?>" style="display:block;">
+                                <img src="<?php echo $rows["imagem"]; ?>" width="140px" onclick="destaque(this)">
+                                <p class="descricao"><?php echo $rows["descricao"]; ?></p>
+                                <hr>
+                                <p class="valorProduto">R$<?php echo $rows["preco"]; ?></p>
+                                <p class="promocao">R$<?php echo $rows["precofinal"]; ?></p>
+                                <button class="comprar" name="botao" title="clique aqui para comprar">Comprar</button>
+                            </div>
+
+                    <?php
+                        }
+                    } else {
+                        echo "Nenhum produto cadastrado!";
+                    }
+
+                    ?>
+                    <!--Fim Produto  -->
+                </section>
             </div>
         </main>
-        
+
         <!--Rodapé  -->
         <footer id="rodapeprodutos">
             <p id="formas_pagamento">
